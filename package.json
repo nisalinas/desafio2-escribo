@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "node src/server.js",
-    "build": "npm install && npm run lint",
+    "build": "npm install && npm run lint && npx prisma migrate deploy",
     "dev": "nodemon src/server.js",
     "lint": "eslint src/**/*.js --fix",
     "test": "vitest run --dir src/use-cases",
